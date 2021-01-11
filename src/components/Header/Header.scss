@@ -1,0 +1,75 @@
+.body {
+  padding-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 12px;
+
+  button {
+    border: 0px;
+    color: white;
+    background-color: #3E3E3E !important;
+    border-radius: 100px;
+    color: #FAFAFA;
+    padding: 7px 14px;
+    font-family: IRANSans;
+    font-size: 9px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  div {
+    padding: 10px;
+  }
+}
+
+.first {
+  display: flex;
+  align-items: center;
+
+  .basalam {
+    margin-right: 5px;
+  }
+
+}
+
+.second {
+  display: flex;
+  position: relative;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  border: gray solid 1px;
+  border-radius: 100px;
+  width: 85%;
+  padding: 7px 11px;
+  margin: 0 auto;
+
+  input {
+    all: unset;
+    width: 90%;
+
+    &::placeholder {
+      font-size: 11px;
+    }
+  }
+}
+
+.numberCart {
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: #DF3856 !important;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: 7px;
+  left: -4px;
+}

@@ -1,0 +1,110 @@
+.content {
+  padding: 0 17px;
+
+  .first {
+    padding: 24px 0;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+}
+
+.content--profile {
+  display: flex;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  padding-top: 20px;
+}
+
+.info {
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  flex-grow: 1;
+  padding: 5px 0;
+  margin-right: 10px;
+}
+
+.price {
+  justify-content: flex-end;
+  flex-grow: 1;
+  display: flex;
+  padding: 5px 0;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.tools div a {
+  text-decoration: none;
+  color: #858585;
+  font-weight: bold;
+  border-bottom: 2px dotted #7D7D7D;
+  position: absolute;
+  left: 0px;
+}
+
+.btn {
+  border: none;
+  display: flex;
+  margin: 0px 6px;
+  cursor: pointer;
+}
+
+.btn img {
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  padding: 6px;
+  background-color: #eee !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add {
+
+}
+
+.min {
+
+}
+
+.trash {
+  margin-right: 12px;
+}
+
+.tools {
+  padding: 10px 0 0 20px;
+}
+
+.tools--input {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #eee;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.tools--second {
+  display: flex;
+  margin-right: -6px;
+}
+
+.sale {
+  text-decoration: line-through;
+  color: #9D9D9D;
+}

@@ -1,0 +1,38 @@
+.body {
+  padding: 10px 0;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  min-height:40px;
+  min-width: 320px;
+  width:100%;
+}
+
+.content--third {
+  display: flex;
+  justify-content: space-between;
+}
+
+.m10 {
+  margin: 0 10px;
+}
+
+.continue--buy {
+  background-color: #DF3856 !important;
+  color: white;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.continue--buy--span--final {
+  padding: 0 10px;
+  background-color: #DF3856 !important;
+}
+
+.content--third--price {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
