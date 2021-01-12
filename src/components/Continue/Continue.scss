@@ -1,0 +1,70 @@
+.body {
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.content--second {
+  margin: 0 10px;
+  padding-top: 15px;
+}
+
+.free--info {
+  font-size: 13px;
+  background-color: #DFF5F1 !important;
+  padding: 10px;
+  color: #00786C;
+}
+
+.free--info span {
+  background-color: #DFF5F1 !important;
+}
+
+.sale--code {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+.sale--code--span {
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  background-color: #eee !important;
+  padding: 4px 12px;
+  margin: 15px;
+  border-radius: 100px;
+  img {
+    background-color: #eee !important;
+    margin-left: 5px;
+  }
+}
+
+.content--third {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.continue--buy {
+  background-color: #DF3856 !important;
+  font-size: 12px;
+  height: 30px;
+  color: white;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0px 17px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  span {
+    background-color: #DF3856 !important;
+  }
+}
+
+.content--third--price {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}

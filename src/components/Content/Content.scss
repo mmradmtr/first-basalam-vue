@@ -1,6 +1,6 @@
 .content {
-  padding: 0 17px;
-
+  padding: 0 17px 15px 17px;
+  margin-bottom: 2px;
   .first {
     padding: 24px 0;
   }
@@ -48,13 +48,17 @@
   position: relative;
 }
 
-.tools div a {
-  text-decoration: none;
-  color: #858585;
-  font-weight: bold;
-  border-bottom: 2px dotted #7D7D7D;
-  position: absolute;
-  left: 0px;
+.tools {
+  div {
+    a {
+      text-decoration: none;
+      color: #858585;
+      font-weight: bold;
+      border-bottom: 2px dotted #7D7D7D;
+      position: absolute;
+      left: 0px;
+    }
+  }
 }
 
 .btn {
@@ -64,15 +68,17 @@
   cursor: pointer;
 }
 
-.btn img {
-  border-radius: 100%;
-  width: 13px;
-  height: 13px;
-  padding: 6px;
-  background-color: #eee !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.btn {
+  img {
+    border-radius: 100%;
+    width: 13px;
+    height: 13px;
+    padding: 6px;
+    background-color: #eee !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .add {

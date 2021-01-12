@@ -1,0 +1,50 @@
+.content--second {
+  margin: 0 10px;
+  padding-top: 10px;
+}
+
+.free--info {
+  background-color: #DFF5F1 !important;
+  padding: 10px;
+  color: #00786C;
+  font-size: 13px;
+
+  span {
+    background-color: #DFF5F1 !important;
+  }
+}
+
+.sale--code {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: -10px;
+}
+
+.content--third {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  align-items: flex-end;
+}
+
+.continue--buy {
+  background-color: #DF3856 !important;
+  color: white;
+  height: 30px;
+  border-radius: 100px;
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 3px;
+  align-items: center;
+  padding: 0px 17px;
+  cursor: pointer;
+  span {
+    background-color: #DF3856 !important;
+  }
+}
+
+.content--third--price {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}

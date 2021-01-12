@@ -1,11 +1,17 @@
 <template>
   <div id="app">
-      <Header/>
-      <Navbar/>
-      <Title />
-      <Information />
-      <Content/>
-      <Footer />
+    <Header/>
+    <Navbar/>
+    <Title/>
+    <Information/>
+    <Content/>
+    <Content/>
+    <Continue/>
+    <Title/>
+    <Information/>
+    <Content/>
+    <Total />
+    <Footer/>
   </div>
 </template>
 
@@ -15,6 +21,8 @@ import Navbar from '@/components/Navbar'
 import Content from '@/components/Content'
 import Title from '@/components/Title'
 import Information from '@/components/Information'
+import Continue from '@/components/Continue'
+import Total from '@/components/Total'
 import Footer from '@/components/Footer'
 
 export default {
@@ -25,7 +33,9 @@ export default {
     Content,
     Title,
     Information,
-    Footer
+    Continue,
+    Footer,
+    Total
   }
 }
 </script>
