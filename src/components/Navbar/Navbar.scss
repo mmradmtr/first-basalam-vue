@@ -8,14 +8,16 @@
   }
 
   .active {
-    color: #DF3856;
+    color: $primary-color;
     font-weight: bold;
   }
 
   ul {
     all: unset;
     display: flex;
-    justify-content: space-around;
+    //justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   li {
@@ -25,7 +27,7 @@
   }
 
   .line {
-    background-color: #DFDFDF !important;
+    background-color: $info_background_color;
     height: 2px;
     width: 100%;
     display: flex;
@@ -33,7 +35,7 @@
   }
 
   .inline {
-    background-color: #DF3856 !important;
+    background-color: $primary-color;
     height: 2px;
     width: 50%;
   }

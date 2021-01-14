@@ -11,7 +11,7 @@
   button {
     border: 0px;
     color: white;
-    background-color: #3E3E3E !important;
+    background-color: $btn-backcolor;
     border-radius: 100px;
     color: #FAFAFA;
     padding: 7px 14px;
@@ -64,7 +64,7 @@
   width: 20px;
   height: 20px;
   border-radius: 30px;
-  background-color: #DF3856 !important;
+  background-color: $primary-color;
   color: white;
   font-size: 12px;
   text-align: center;

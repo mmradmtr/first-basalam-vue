@@ -5,7 +5,6 @@
     <Title/>
     <Information/>
     <Content/>
-    <Content/>
     <Continue/>
     <Title/>
     <Information/>
@@ -40,37 +39,4 @@ export default {
 }
 </script>
 
-<style>
-@import url('assets/fonts/fontiran.css');
-
-@media screen and (max-width: 576px) {
-  * {
-    font-family: IRANSans;
-    margin: 0;
-    padding: 0;
-  }
-
-  *:not(#app) {
-    background-color: white;
-  }
-
-  #app {
-    min-width: 320px !important;
-    font-weight: 300;
-    font-size: 14px;
-    direction: rtl;
-    padding: 0;
-    background-color: #eee;
-    z-index: -1;
-    margin: 0 0 100px 0;
-  }
-
-  .text-bold {
-    font-weight: bold;
-  }
-
-  .text-small {
-    font-size: 0.8em;
-  }
-}
-</style>
+<style lang="scss" src="@/assets/Styles/_app.scss" />

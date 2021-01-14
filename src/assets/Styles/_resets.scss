@@ -1,0 +1,37 @@
+* {
+  font-family: IRANSans;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  //display: flex;
+  background-color: #eee !important;
+}
+
+#app {
+  margin:  auto;
+  min-width: 320px !important;
+  max-width: 360px !important;
+  font-weight: 300;
+  font-size: 14px;
+  direction: rtl;
+  padding: 0;
+  background-color: #eee;
+  z-index: -1;
+
+  //margin: 0 0 100px 0;
+}
+
+*:not(#app) {
+  background-color: white;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-small {
+  font-size: 0.8em;
+}
+

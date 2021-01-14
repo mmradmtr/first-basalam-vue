@@ -4,13 +4,13 @@
 }
 
 .free--info {
-  background-color: #DFF5F1 !important;
+  background-color: $info_background_color ;
   padding: 10px;
   color: #00786C;
   font-size: 13px;
 
   span {
-    background-color: #DFF5F1 !important;
+    background-color: $info_background_color;
   }
 }
 
@@ -28,7 +28,7 @@
 }
 
 .continue--buy {
-  background-color: #DF3856 !important;
+  background-color: $primary-color;
   color: white;
   height: 30px;
   border-radius: 100px;
@@ -39,7 +39,7 @@
   padding: 0px 17px;
   cursor: pointer;
   span {
-    background-color: #DF3856 !important;
+    background-color: $primary-color;
   }
 }
 
