@@ -2,7 +2,7 @@
   <div class="body">
     <Title :Title="Booths.Title"></Title>
     <Information :Information="Booths.Information"></Information>
-    <Content :Product="Produ" v-for="(Produ, idx) in Booths.Products" :key="idx"></Content>
+    <Content :Products="Products" v-for="(Products, idx) in Booths.Products" :key="idx"></Content>
 <!--    <Continue :Products="Booths.Products"></Continue>-->
   </div>
 </template>

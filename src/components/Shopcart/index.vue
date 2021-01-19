@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <Booth :Booths="Datas" v-for="(Datas,index) in Data" :key="index"/>
+    <Booth :Booths="Data" v-for="(Data,index) in data" :key="index"/>
     <Total/>
     <Footer/>
   </div>
@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      Data: {
+      data: {
         Booth: {
           Title: {
             title: "خوشمزه های خاتون"
