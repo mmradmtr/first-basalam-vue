@@ -40,6 +40,9 @@
   flex-grow: 1;
   display: flex;
   padding: 5px 0;
+  .space {
+    margin-right: 4px;
+  }
 }
 
 .tools {

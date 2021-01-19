@@ -1,16 +1,15 @@
 <template>
   <div class="body">
-    <div class="content" v-for="Booth in Booths" :key="Booth">
+<!--    <div class="content" >-->
+    <div class="content">
       <div class="product">
         <div>
-          <img src="@/assets/Images/Content/sosis_almani_paniri_pic.svg" alt="">
+          <img :src="Product.img" alt="">
         </div>
         <div class="info">
-          <div class="name"><span>{{ Booth.name }}</span></div>
-          <div class="name"></div>
-          <div class="name"></div>
-          <div class="price"><span class="sale">{{ Booth.price }}</span><span>{{ Booth.sale }}<span
-              class="text-bold">تومان</span></span>
+          <div class="name"><span>{{ Product.name }}</span></div><br>
+          <div class="price"><span class="sale">{{ Product.price }}</span><span>{{ Product.sale }}<span
+              class="text-bold space">تومان</span></span>
           </div>
           <div class="price sale"></div>
         </div>
@@ -20,11 +19,11 @@
           <button type="submit" class="btn Min">
             <img src="@/assets/Images/Content/min.svg" alt="submit"/>
           </button>
-          <input class="tools--input" value="3" type="text"/>
-          <button type="submit" class="btn Add">
+          <span class="tools--input" >{{ input }}</span>
+          <button type="submit" @mousedown="increase()" @mouseup="cleartime()" class="btn Add">
             <img src="@/assets/Images/Content/plus.svg" alt="submit"/>
           </button>
-          <button type="submit" class="btn trash">
+          <button type="submit" class="btn trash" @click="Delete()">
             <img src="@/assets/Images/Content/Trash.svg" alt="submit"/>
           </button>
         </div>
@@ -35,23 +34,35 @@
 </template>
 
 <script>
-
 export default {
   // name: "Content"
-  components: {},
   data() {
     return {
-      Booths: [
-        {
-          name: "سوسیس آلمانی پنیری",
-          price: "۸۵,۰۰۰",
-          sale: "۷۵,۰۰۰",
-          img: ""
-        },
-
-      ]
+      input: 0,
+      timer: null,
+      delay: 0
     }
-  }
+  },
+  methods: {
+    increase() {
+      console.log(this.input)
+        this.timer = setTimeout(() => {
+          ++this.input;
+        }, 120)
+    },
+    cleartime() {
+
+    },
+    Delete() {
+
+    }
+  },
+  props: {
+    Product: {
+      type: Object,
+      required: true
+    }
+  },
 }
 </script>
 

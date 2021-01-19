@@ -15,7 +15,7 @@
         </div>
         <div class="content--third--tools">
           <div class="content--third--2product">
-            <span>جمع مبلغ برای 2 کالا</span>
+            <span>جمع مبلغ برای <span>2</span> کالا</span>
           </div>
           <div class="content--third--price">
             <span class="text-bold">۷۵۰۰۰ تومان</span>
@@ -29,6 +29,12 @@
 <script>
 export default {
   // name: "Content"
+  props: {
+    Products: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
 

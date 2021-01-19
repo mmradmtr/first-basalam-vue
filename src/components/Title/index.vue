@@ -1,12 +1,21 @@
 <template>
   <div class="body">
-    <div class="first">از غرفه: <span class="title">خوشمزه های خاتون</span></div>
+    <div class="first">از غرفه: <span class="title">{{ Title.title }}</span></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "index"
+  // name: "index"
+  data() {
+    return {}
+  },
+  props: {
+    Title: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
 

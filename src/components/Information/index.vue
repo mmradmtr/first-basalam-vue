@@ -5,9 +5,9 @@
         <img src="@/assets/Images/information/avatar1.png" alt="">
       </div>
       <div class="title">
-        <span>مینو هنگام</span><br>
+        <span>{{ Information.name }}</span><br>
         <img src="@/assets/Images/information/location_icon.svg" alt="">
-        <span class="text-small-px">از سعادت شهر</span>
+        <span class="text-small-px">{{ Information.from_ }}</span>
       </div>
     </div>
   </div>
@@ -15,7 +15,18 @@
 
 <script>
 export default {
-  name: "index"
+  // name: "index"
+  // data() {
+  //   return {
+  //     name: '',
+  //     from_: 'از سعادت شهر'
+  //   }
+  // },
+  props: {
+    Information: {
+      type: Object
+    }
+  }
 }
 </script>
 

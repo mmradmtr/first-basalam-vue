@@ -1,0 +1,27 @@
+[
+   {
+    "Booth": {
+      "Title": {
+        "title": "خوشمزه های خاتون"
+      },
+      "Information": {
+        "name": "مینو هنگام",
+        "from_": "از سعادت شهر"
+      },
+      "Products": {
+        "Product1": {
+          "name": "سوسیس آلمانی پنیری",
+          "price": "۸۵,۰۰۰",
+          "sale": "۷۵,۰۰۰",
+          "img": "require('@/assets/Images/Content/sosis_almani_paniri_pic.svg')"
+        },
+        "Product2": {
+          "name": "کالباس پسته",
+          "price": "۳۵,۰۰۰",
+          "sale": "۱۵,۰۰۰",
+          "img": "require('@/assets/Images/Content/kalbas_peste_pic.svg')"
+        }
+      }
+    }
+  }
+]
