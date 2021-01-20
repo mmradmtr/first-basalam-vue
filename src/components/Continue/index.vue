@@ -2,7 +2,7 @@
   <div class="body">
     <div class="content--second">
       <div class="free--info">
-        <span>هورا ارسال از این غرفه برای شما <span style="font-weight: bold">رایگان شد</span></span>
+        <div>هورا ارسال از این غرفه برای شما <span style="font-weight: bold">رایگان شد</span></div>
       </div>
       <div class="sale--code" v-if="Booths.sale_status === true">
         <span><img src="@/assets/Images/Continue/ticket.svg" alt="">ثبت کد تخفیف غرفه</span>
@@ -29,7 +29,6 @@ export default {
   // name: "Content"
   data() {
     return {
-      // sale_status: true
 
     }
   },

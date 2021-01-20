@@ -9,13 +9,19 @@
 }
 
 .free--info {
-  font-size: 13px;
-  background-color: $info_background_color;
-  padding: 10px;
   margin-bottom: 20px;
-  color: $color-info;
+  background-color: $app-backcolor !important;
+  div {
+    box-sizing: border-box;
+    color: $color-info;
+    font-size: 13px;
+    padding: 10px;
+    background-color: $info_background_color;
+    width: 85%;
+  }
   span {
     background-color: $info_background_color;
+
   }
 }
 
@@ -24,6 +30,7 @@
   align-items: center;
   justify-content: flex-end;
   cursor: pointer;
+
   span {
     font-weight: bold;
     font-size: 12px;
