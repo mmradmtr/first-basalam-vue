@@ -6,14 +6,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 12px;
+  margin: 0 12px;
 
   button {
-    border: 0px;
-    color: white;
+    border: 0;
     background-color: $btn-backcolor;
     border-radius: 100px;
-    color: #FAFAFA;
+    color: $header-btn-color;
     padding: 7px 14px;
     font-family: IRANSans;
     font-size: 9px;

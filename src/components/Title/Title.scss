@@ -1,13 +1,9 @@
-.body {
-  padding: 0 15px;
-}
-
 .first {
-  padding: 22px 0;
-}
+  padding: 22px 15px;
 
-.title {
-  font-weight: bold;
+  span {
+    font-weight: map-get($font-weight, bold);
+  }
 }
 
 

@@ -2,12 +2,12 @@
   <div class="body">
     <div class="profile">
       <div class="avatar">
-        <img src="@/assets/Images/information/avatar1.png" alt="">
+        <img :src="Information.pic" alt="">
       </div>
       <div class="title">
         <span>{{ Information.name }}</span><br>
         <img src="@/assets/Images/information/location_icon.svg" alt="">
-        <span class="text-small-px">{{ Information.from_ }}</span>
+        <span class="text-light">از {{ Information.from_ }}</span>
       </div>
     </div>
   </div>
@@ -15,16 +15,10 @@
 
 <script>
 export default {
-  // name: "index"
-  // data() {
-  //   return {
-  //     name: '',
-  //     from_: 'از سعادت شهر'
-  //   }
-  // },
   props: {
     Information: {
-      type: Object
+      type: Object,
+      required: true
     }
   }
 }

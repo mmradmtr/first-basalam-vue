@@ -12,32 +12,30 @@
   font-size: 13px;
   background-color: $info_background_color;
   padding: 10px;
+  margin-bottom: 20px;
   color: $color-info;
-}
-
-.free--info span {
-  background-color: $info_background_color;
+  span {
+    background-color: $info_background_color;
+  }
 }
 
 .sale--code {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-left: -10px;
   cursor: pointer;
-}
+  span {
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    background-color: $app-backcolor !important;
+    padding: 4px 12px;
+    border-radius: 100px;
 
-.sale--code--span {
-  font-weight: bold;
-  font-size: 12px;
-  display: flex;
-  background-color: $app-backcolor;
-  padding: 4px 12px;
-  margin: 15px;
-  border-radius: 100px;
-  img {
-    background-color: $app-backcolor;
-    margin-left: 5px;
+    img {
+      background-color: $app-backcolor !important;
+      margin-left: 5px;
+    }
   }
 }
 
@@ -45,6 +43,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 20px;
 }
 
 .continue--buy {
@@ -58,6 +57,7 @@
   padding: 1px 17px;
   margin-bottom: 3px;
   cursor: pointer;
+
   span {
     background-color: $primary-color;
   }

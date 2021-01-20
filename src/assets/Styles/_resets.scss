@@ -16,18 +16,13 @@ body {
   font-size: 14px;
   direction: rtl;
   padding: 0;
-  background-color: #eee;
+  background-color: #eee !important;
   z-index: -1;
 }
 
 *:not(#app) {
   background-color: white;
 }
-
-.text-bold {
-  font-weight: bold;
-}
-
 .text-small {
   font-size: 0.8em;
 }

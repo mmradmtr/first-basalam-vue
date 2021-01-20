@@ -3,7 +3,7 @@
     <Title :Title="Booths.Title"></Title>
     <Information :Information="Booths.Information"></Information>
     <Content :Products="Products" v-for="(Products, idx) in Booths.Products" :key="idx"></Content>
-<!--    <Continue :Products="Booths.Products"></Continue>-->
+    <Continue :Booths="Booths"></Continue>
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 import Title from '@/components/Title'
 import Information from '@/components/Information'
 import Content from '@/components/Content'
-// import Continue from '@/components/Continue'
+import Continue from '@/components/Continue'
 
 export default {
   // name: "Content"
@@ -19,7 +19,7 @@ export default {
     Title,
     Information,
     Content,
-    // Continue,
+    Continue,
   },
   props: {
     Booths: {

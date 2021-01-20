@@ -1,15 +1,9 @@
 <template>
-  <div class="body">
-    <div class="first">از غرفه: <span class="title">{{ Title.title }}</span></div>
-  </div>
+    <div class="first">از غرفه: <span>{{ Title.title }}</span></div>
 </template>
 
 <script>
 export default {
-  // name: "index"
-  data() {
-    return {}
-  },
   props: {
     Title: {
       type: Object,
@@ -19,6 +13,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="@/components/Title/Title.scss" scoped>
-
-</style>
+<style lang="scss" src="@/components/Title/Title.scss" scoped />

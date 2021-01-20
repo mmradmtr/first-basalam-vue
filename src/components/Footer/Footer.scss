@@ -1,21 +1,15 @@
 .body {
   padding: 15px 0;
   position:sticky;
-  //left:0px;
-  bottom:0px;
+  bottom:0;
   min-height:40px;
-  //min-width: 320px;
   max-width: 360px;
-  margin: auto;
   width:100%;
 }
 
-.content--third {
+.content {
   display: flex;
   justify-content: space-between;
-}
-
-.m10 {
   margin: 0 10px;
 }
 
@@ -28,12 +22,15 @@
   padding: 0 10px;
 }
 
-.continue--buy--span--final {
+.buy {
   padding: 0 10px;
   background-color: $primary-color;
+  span {
+    background-color: $primary-color;
+  }
 }
 
-.content--third--price {
+.price {
   display: flex;
   justify-content: flex-end;
   font-weight: bold;

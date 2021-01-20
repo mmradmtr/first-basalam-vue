@@ -1,43 +1,39 @@
 <template>
-  <div class="body">
-    <div class="content">
-      <div class="product">
-        <div>
-          <img :src="Products.img" alt="">
-        </div>
-        <div class="info">
-          <div class="name"><span>{{ Products.name }}</span></div>
-          <br>
-          <div class="price"><span class="sale">{{ Products.price }}</span><span>{{ Products.sale }}<span
-              class="text-bold space">تومان</span></span>
-          </div>
-          <div class="price sale"></div>
+  <div class="content">
+    <div class="product">
+      <div>
+        <img :src="Products.img" alt="">
+      </div>
+      <div class="info">
+        <div class="name"><span>{{ Products.name }}</span></div>
+        <br>
+        <div class="price"><span class="sale">{{ Products.price }}</span><span>{{ Products.sale }}<span
+            class="space">تومان</span></span>
         </div>
       </div>
-      <div class="tools">
-        <div class="tools--second">
-          <button type="submit" @mousedown="decrease()" @mouseup="cleartime()" @mouseleave="cleartime()"
-                  class="btn Min">
-            <img src="@/assets/Images/Content/min.svg" alt="submit"/>
-          </button>
-          <span class="tools--input">{{ input }}</span>
-          <button type="submit" @mousedown="increase()" @mouseup="cleartime()" @mouseleave="cleartime()"
-                  class="btn Add">
-            <img src="@/assets/Images/Content/plus.svg" alt="submit"/>
-          </button>
-          <button type="submit" class="btn trash" @click="Delete()">
-            <img src="@/assets/Images/Content/Trash.svg" alt="submit"/>
-          </button>
-        </div>
-        <div class="buy-list text-small"><a href="#">ذخیره در لیست خرید بعدی</a></div>
+    </div>
+    <div class="tools">
+      <div class="second">
+        <button type="submit" @mousedown="decrease()" @mouseup="cleartime()" @mouseleave="cleartime()"
+                class="btn">
+          <img src="@/assets/Images/Content/min.svg" alt="submit"/>
+        </button>
+        <span class="input">{{ input }}</span>
+        <button type="submit" @mousedown="increase()" @mouseup="cleartime()" @mouseleave="cleartime()"
+                class="btn">
+          <img src="@/assets/Images/Content/plus.svg" alt="submit"/>
+        </button>
+        <button type="submit" class="btn trash" @click="Delete()">
+          <img src="@/assets/Images/Content/Trash.svg" alt="submit"/>
+        </button>
       </div>
+      <div class="text-small"><a href="#">ذخیره در لیست خرید بعدی</a></div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  // name: "Content"
   data() {
     return {
       input: 1,
