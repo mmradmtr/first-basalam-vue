@@ -2,11 +2,11 @@
   <div class="body">
     <div class="content">
       <div class="continue--buy">
-        <span class="buy text-bold">ادامه خرید از <span>{{ Object.keys(data).length }}</span> غرفه</span>
+        <span class="buy text-bold">ادامه خرید از <span>{{ Object.keys(Footer).length }}</span> غرفه</span>
       </div>
       <div class="content--third--tools">
         <div class="content--third--2product">
-          <span>مبلغ قابل پرداخت <span>{{ Object.keys(data).length }}</span> قرفه</span>
+          <span>مبلغ قابل پرداخت <span>{{ Object.keys(Footer).length }}</span> قرفه</span>
         </div>
         <div class="price">
           <span class="text-bold">۷۵۰۰۰ تومان</span>
@@ -19,11 +19,11 @@
 <script>
 export default {
   props: {
-    data: {
-      type: Object,
+    Footer: {
+      type: Array,
       required: true
     }
-  }
+  },
 }
 
 </script>

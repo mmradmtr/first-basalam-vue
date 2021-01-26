@@ -1,5 +1,10 @@
 <template>
   <div class="content">
+    <div>
+      <h1>
+        {{getQuantitiesInputs}}
+      </h1>
+    </div>
     <div class="product">
       <div>
         <img :src="Products.img" alt="">
@@ -14,16 +19,16 @@
     </div>
     <div class="tools">
       <div class="second">
-        <button type="submit" @mousedown="decrease()" @mouseup="cleartime()" @mouseleave="cleartime()"
+        <button type="submit" @mousedown="decrease" @mouseup="cleartime" @mouseleave="cleartime()"
                 class="btn">
           <img src="@/assets/Images/Content/min.svg" alt="submit"/>
         </button>
-        <span class="input">{{ input }}</span>
-        <button type="submit" @mousedown="increase()" @mouseup="cleartime()" @mouseleave="cleartime()"
+        <span class="input">{{ Products.quantity}}</span>
+        <button type="submit" @mousedown="increase" @mouseup="cleartime" @mouseleave="cleartime()"
                 class="btn">
           <img src="@/assets/Images/Content/plus.svg" alt="submit"/>
         </button>
-        <button type="submit" class="btn trash" @click="Delete()">
+        <button type="submit" class="btn trash" @click="deleteProduct">
           <img src="@/assets/Images/Content/Trash.svg" alt="submit"/>
         </button>
       </div>
@@ -33,36 +38,25 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   data() {
     return {
-      input: 1,
-      timer: null,
-      delay: 150
     }
+  },
+  computed: {
+    ...mapGetters(['getQuantitiesInputs'])
   },
   methods: {
     increase() {
-      ++this.input
-      --this.delay
-      this.timer = setTimeout(() => {
-        this.increase()
-      }, this.delay)
+      this.$store.dispatch('increaseProduct', this.Products.id);
     },
     decrease() {
-      --this.input
-      --this.delay
-      this.timer = setTimeout(() => {
-        this.decrease()
-        this.input < 1 ? this.input = 1 : this.input;
-      }, this.delay)
+      this.$store.dispatch('decreaseProduct', this.Products.id);
     },
-    cleartime() {
-      clearTimeout(this.timer)
-      this.delay = 150
-    },
-    Delete() {
-
+    deleteProduct() {
+      this.$store.dispatch('deleteProduct', this.Products.id)
     }
   },
   props: {
@@ -70,7 +64,7 @@ export default {
       type: Object,
       required: true
     }
-  },
+  }
 }
 </script>
 

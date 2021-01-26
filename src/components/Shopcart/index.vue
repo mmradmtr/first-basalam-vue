@@ -1,7 +1,7 @@
 <template>
   <div class="body">
-    <Booth :Booths="BoothData" v-for="(BoothData,index) in dataPost" :key="index"/>
-    <Footer :data="dataPost"/>
+    <Booth :Booths="BoothData" v-for="(BoothData,index) in allBooths" :key="index"/>
+    <Footer :Footer="allBooths"/>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 
 import Booth from "@/components/Booth";
 import Footer from "@/components/Footer";
-import posts from "@/posts.json";
+// import { mapGetters } from 'vuex'
 
 export default {
   components: {
@@ -18,9 +18,14 @@ export default {
   },
   data() {
     return {
-      dataPost: posts
+
     }
   },
+  computed: {
+    allBooths() {
+      return this.$store.state;
+    },
+  }
 }
 </script>
 

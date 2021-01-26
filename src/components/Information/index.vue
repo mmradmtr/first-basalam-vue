@@ -2,12 +2,12 @@
   <div class="body">
     <div class="profile">
       <div class="avatar">
-        <img :src="Information.pic" alt="">
+        <img :src="info.pic" alt="">
       </div>
       <div class="title">
-        <span>{{ Information.name }}</span><br>
+        <span>{{ info.name }}</span><br>
         <img src="@/assets/Images/information/location_icon.svg" alt="">
-        <span class="text-light">از {{ Information.from_ }}</span>
+        <span class="text-light">از {{ info.location }}</span>
       </div>
     </div>
   </div>
@@ -16,7 +16,7 @@
 <script>
 export default {
   props: {
-    Information: {
+    info: {
       type: Object,
       required: true
     }

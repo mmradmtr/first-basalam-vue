@@ -1,7 +1,7 @@
 <template>
   <div class="body">
-    <Title :Title="Booths.Title"></Title>
-    <Information :Information="Booths.Information"></Information>
+    <Title :Title="Booths.info"></Title>
+    <Information :info="Booths.info"></Information>
     <Content :Products="Products" v-for="(Products, idx) in Booths.Products" :key="idx"></Content>
     <Continue :Booths="Booths"></Continue>
   </div>
