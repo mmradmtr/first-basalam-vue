@@ -5,7 +5,6 @@
         <div>هورا ارسال از این غرفه برای شما <span style="font-weight: bold">رایگان شد</span></div>
       </div>
       <div class="sale--code" v-if="Booths.sale_status === true">
-<!--      <div class="sale&#45;&#45;code" >-->
         <span><img src="@/assets/Images/Continue/ticket.svg" alt="">ثبت کد تخفیف غرفه</span>
       </div>
       <div class="content--third">
@@ -39,9 +38,6 @@ export default {
       required: true
     },
   },
-  // mounted() {
-  //   console.log("2", this.Booths.Continue)
-  // }
 }
 </script>
 

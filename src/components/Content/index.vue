@@ -19,12 +19,12 @@
     </div>
     <div class="tools">
       <div class="second">
-        <button type="submit" @mousedown="decrease" @mouseup="cleartime" @mouseleave="cleartime()"
+        <button type="submit" @mousedown="decrease"
                 class="btn">
           <img src="@/assets/Images/Content/min.svg" alt="submit"/>
         </button>
         <span class="input">{{ Products.quantity}}</span>
-        <button type="submit" @mousedown="increase" @mouseup="cleartime" @mouseleave="cleartime()"
+        <button type="submit" @mousedown="increase"
                 class="btn">
           <img src="@/assets/Images/Content/plus.svg" alt="submit"/>
         </button>
