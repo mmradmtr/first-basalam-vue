@@ -1,9 +1,9 @@
 <template>
   <div class="body">
-    <Title :Title="Booths.info"></Title>
-    <Information :info="Booths.info"></Information>
+    <Title v-if="Booths.info.isProduct" :Title="Booths.info"></Title>
+    <Information v-if="Booths.info.isProduct" :info="Booths.info"></Information>
     <Content :Products="Products" v-for="(Products, idx) in Booths.Products" :key="idx"></Content>
-    <Continue :Booths="Booths"></Continue>
+    <Continue v-if="Booths.info.isProduct" :Booths="Booths"></Continue>
   </div>
 </template>
 
@@ -21,6 +21,9 @@ export default {
     Content,
     Continue,
   },
+  // created() {
+  //   console.log(this.Booths)
+  // },
   props: {
     Booths: {
       type: Object,

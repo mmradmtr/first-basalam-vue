@@ -2,7 +2,7 @@
   <div class="content">
     <div>
       <h1>
-        {{getQuantitiesInputs}}
+        <!--        {{getSalePrice}}-->
       </h1>
     </div>
     <div class="product">
@@ -19,12 +19,12 @@
     </div>
     <div class="tools">
       <div class="second">
-        <button type="submit" @mousedown="decrease"
+        <button type="submit" @mousedown="decrease" @mouseup="cleartime" @mouseleave="cleartime"
                 class="btn">
           <img src="@/assets/Images/Content/min.svg" alt="submit"/>
         </button>
-        <span class="input">{{ Products.quantity}}</span>
-        <button type="submit" @mousedown="increase"
+        <span class="input">{{ Products.quantity }}</span>
+        <button type="submit" @mousedown="increase" @mouseup="cleartime" @mouseleave="cleartime"
                 class="btn">
           <img src="@/assets/Images/Content/plus.svg" alt="submit"/>
         </button>
@@ -38,25 +38,39 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+// import { mapGetters } from 'vuex'
 
 export default {
   data() {
     return {
+      delay: 120,
+      timer: null,
     }
   },
   computed: {
-    ...mapGetters(['getQuantitiesInputs'])
+    // ...mapGetters(['getSalePrice'])
   },
   methods: {
     increase() {
-      this.$store.dispatch('increaseProduct', this.Products.id);
+      this.timer = setTimeout(() => {
+        this.$store.dispatch('increaseProduct', this.Products.id);
+        this.increase()
+        --this.delay
+      }, this.delay)
     },
     decrease() {
-      this.$store.dispatch('decreaseProduct', this.Products.id);
+      this.timer = setTimeout(() => {
+        this.$store.dispatch('decreaseProduct', this.Products.id);
+        this.decrease()
+        --this.delay
+      }, this.delay)
     },
     deleteProduct() {
       this.$store.dispatch('deleteProduct', this.Products.id)
+    },
+    cleartime() {
+      clearTimeout(this.timer)
+      this.delay = 120;
     }
   },
   props: {

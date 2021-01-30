@@ -10,7 +10,7 @@
       <div class="second">
         <button>فروش در باسلام</button>
         <img src="@/assets/Images/header/bag.svg" alt="">
-        <span class="numberCart">۳</span>
+        <span class="numberCart">{{ getAllProducts }}</span>
       </div>
     </div>
 
@@ -22,12 +22,18 @@
 </template>
 
 <script>
-
-
+import {mapGetters} from 'vuex'
 
 export default {
-
+  data() {
+    return {
+      allProducts: 0
+    }
+  },
+  computed: {
+    ...mapGetters(['getAllProducts'])
+  }
 }
 </script>
 
-<style lang="scss" src="@/components/Header/Header.scss" scoped />
+<style lang="scss" src="@/components/Header/Header.scss" scoped/>
