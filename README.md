@@ -1,4 +1,4 @@
-# vuebasalam
+# Basalam Project Cart with Vuejs
 
 ## Project setup
 ```
@@ -10,15 +10,7 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### if you had some errors v
 ```
-npm run build
+npm cache clear --force
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
