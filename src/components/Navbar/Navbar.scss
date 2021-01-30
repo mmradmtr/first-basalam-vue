@@ -29,11 +29,21 @@
     height: 2px;
     width: 100%;
     display: flex;
+    position: relative;
   }
 
   .inline {
     background-color: $primary-color;
     height: 2px;
     width: 50%;
+    position: absolute;
+    .right0 {
+      right: 0;
+    }
+   .left0 {
+      left: 0;
+    }
   }
+
+
 }
