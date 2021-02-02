@@ -21,4 +21,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="@/components/NextShoppingList/NextShoppingList.scss" scoped/>
+<style lang="scss" src="@/Views/NextShoppingList/NextShoppingList.scss" scoped/>

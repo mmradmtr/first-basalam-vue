@@ -3,11 +3,12 @@
     <div class="content">
       <div class="continue--buy">
         <router-link tag="span" to="/BasketAddress">
-        <span class="buy text-bold" >ادامه خرید از <span>{{ footerContinueBuy }}</span> غرفه</span></router-link>
+          <span class="buy">ادامه فرایند خرید</span>
+        </router-link>
       </div>
       <div class="content--third--tools">
-        <div class="content--third--2product">
-          <span>مبلغ قابل پرداخت <span>{{ footerContinueBuy }}</span> قرفه</span>
+        <div>
+          <span>مبلغ قابل برداخت</span>
         </div>
         <div class="price">
           <span class="text-bold">{{ footerTotalPrice }} تومان</span>
@@ -24,18 +25,9 @@ export default {
   computed: {
     ...mapGetters(['footerContinueBuy', 'footerTotalPrice'])
   },
-  // nextpage(){
-    // return this.$router.push({name:'BasketAddress'})
-  // }
-  // props: {
-  //   Footer: {
-  //     type: Array,
-  //     required: true
-  //   }
-  // },
 }
 
 </script>
 
-<style lang="scss" src="@/components/Footer/Footer.scss" scoped/>
+<style lang="scss" src="@/components/FooterBasket/FooterBasket.scss" scoped/>
 

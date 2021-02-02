@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <Navbar/>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 
@@ -17,6 +17,19 @@ export default {
     Navbar,
   },
 }
+
+String.prototype.toPersianDigits = function () {
+  var id = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+  return this.replace(/[0-9]/g, function (w) {
+    return id[+w]
+  });
+}
+
+
+if (window.scrollY >= 6) {
+  alert(5)
+}
+
 </script>
 
 <style lang="scss" src="@/assets/Styles/_app.scss"/>

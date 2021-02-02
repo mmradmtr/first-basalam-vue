@@ -1,7 +1,7 @@
 <template>
   <div class="body">
-    <Booth :Booths="BoothData" v-for="(BoothData,index) in allBooths" :key="index"/>
-    <Footer :Footer="allBooths"/>
+    <Booth :Booths="BoothData" v-for="(BoothData,index) in allBooths.Booths" :key="index"/>
+    <Footer />
   </div>
 </template>
 
@@ -29,4 +29,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="@/components/Shopcart/Shopcart.scss" scoped/>
+<style lang="scss" src="@/Views/Shopcart/Shopcart.scss" scoped/>

@@ -13,10 +13,10 @@
         </div>
         <div class="content--third--tools">
           <div>
-            <span>جمع مبلغ برای <span>{{ Booths.Continue.product }}</span> کالا</span>
+            <span>جمع مبلغ برای <span>{{ Booths.info.productsCount }}</span> کالا</span>
           </div>
           <div class="content--third--price">
-            <span class="text-bold">{{Booths.Continue.price}} تومان</span>
+            <span class="text-bold">{{ Booths.info.factorPrice }} تومان</span>
           </div>
         </div>
       </div>
@@ -25,12 +25,16 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
-  // name: "Content"
+  // name: "Products"
   data() {
     return {
-
     }
+  },
+  computed: {
+    ...mapGetters(['getProductCount', 'getProductPrice'])
   },
   props: {
     Booths: {

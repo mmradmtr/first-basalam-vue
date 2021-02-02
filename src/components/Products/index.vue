@@ -1,18 +1,13 @@
 <template>
   <div class="content">
-    <div>
-      <h1>
-        <!--        {{getSalePrice}}-->
-      </h1>
-    </div>
     <div class="product">
       <div>
-        <img :src="Products.img" alt="">
+        <img :src="products.img" alt="">
       </div>
       <div class="info">
-        <div class="name"><span>{{ Products.name }}</span></div>
+        <div class="name"><span>{{ products.name }}</span></div>
         <br>
-        <div class="price"><span class="sale">{{ Products.price }}</span><span>{{ Products.sale }}<span
+        <div class="price"><span class="sale">{{ products.price }}</span><span>{{ products.sale }}<span
             class="space">تومان</span></span>
         </div>
       </div>
@@ -23,7 +18,7 @@
                 class="btn">
           <img src="@/assets/Images/Content/min.svg" alt="submit"/>
         </button>
-        <span class="input">{{ Products.quantity }}</span>
+        <span class="input">{{ products.quantity }}</span>
         <button type="submit" @mousedown="increase" @mouseup="cleartime" @mouseleave="cleartime"
                 class="btn">
           <img src="@/assets/Images/Content/plus.svg" alt="submit"/>
@@ -53,20 +48,20 @@ export default {
   methods: {
     increase() {
       this.timer = setTimeout(() => {
-        this.$store.dispatch('increaseProduct', this.Products.id);
+        this.$store.dispatch('increaseProduct', this.products.id);
         this.increase()
         --this.delay
       }, this.delay)
     },
     decrease() {
       this.timer = setTimeout(() => {
-        this.$store.dispatch('decreaseProduct', this.Products.id);
+        this.$store.dispatch('decreaseProduct', this.products.id);
         this.decrease()
         --this.delay
       }, this.delay)
     },
     deleteProduct() {
-      this.$store.dispatch('deleteProduct', this.Products.id)
+      this.$store.dispatch('deleteProduct', this.products.id)
     },
     cleartime() {
       clearTimeout(this.timer)
@@ -74,7 +69,7 @@ export default {
     }
   },
   props: {
-    Products: {
+    products: {
       type: Object,
       required: true
     }
@@ -82,4 +77,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="@/components/Content/Content.scss" scoped/>
+<style lang="scss" src="@/components/Products/Products.scss" scoped/>

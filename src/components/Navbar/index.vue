@@ -9,7 +9,6 @@
       </a></li>
     </ul>
     <div class="line">
-<!--      <div :class="line"></div>-->
       <div class="inline" :style="inline"></div>
     </div>
   </div>
@@ -27,11 +26,11 @@ export default {
   },
   methods: {
     active(nav) {
-      if (nav == 'Shopcart') {
+      if (nav === 'Shopcart') {
         this.ShopcartStatus = 'active';
         this.NextShoppingListStatus = 'deactive';
         this.inline = 'right: 0';
-      } else if (nav == 'NextShoppingList') {
+      } else if (nav === 'NextShoppingList') {
         this.ShopcartStatus = 'deactive';
         this.NextShoppingListStatus = 'active';
         this.inline = 'left: 0';
