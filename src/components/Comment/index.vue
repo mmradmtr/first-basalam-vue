@@ -7,11 +7,8 @@
       <img src="@/assets/Images/edit/edit.svg" alt="">
     </div>
     <div class="text">
-      <label for="One">
-        <input type="radio" id="One" value="One" v-model="picked"/>
         <span> قم بردیسان خیابان دانشگاه بعد از میدان علوم رو به روی بایانه ساختمان شرکت توسعه و تدبیر جوامع
         سلام</span>
-      </label>
       <br>
     </div>
   </div>

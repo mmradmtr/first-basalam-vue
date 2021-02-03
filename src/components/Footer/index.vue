@@ -7,10 +7,11 @@
       </div>
       <div class="content--third--tools">
         <div class="content--third--2product">
-          <span>مبلغ قابل پرداخت <span>{{ footerContinueBuy }}</span> قرفه</span>
+          <span>مبلغ قابل پرداخت <span>{{ footerContinueBuy }}</span> غرفه</span>
         </div>
         <div class="price">
-          <span class="text-bold">{{ footerTotalPrice }} تومان</span>
+          <span class="text-bold">{{ footerTotalPrice }} <span
+              class="space"><img src="@/assets/Images/toman.svg" alt=""></span></span>
         </div>
       </div>
     </div>

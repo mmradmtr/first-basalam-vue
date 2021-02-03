@@ -12,26 +12,52 @@
         <div class="new">آدرس جدید</div>
       </div>
     </div>
-    <Comment></Comment>
-    <Comment></Comment>
+    <div class="comment">
+      <div class="title">
+        <div>به: <span>مهدی خدادادی</span></div>
+        <img src="@/assets/Images/edit/edit.svg" alt="">
+      </div>
+      <div class="text">
+        <label for="one">
+          <input type="radio" name="radio" id="One"/>
+          <span class="rbutton">rbutton</span>
+          <span class="text"> قم بردیسان خیابان دانشگاه بعد از میدان علوم رو به روی بایانه ساختمان شرکت توسعه و تدبیر جوامع
+        سلام</span>
+          <br>
+        </label>
+      </div>
+      <div>
+        <div class="title">
+          <div>به: <span>مهدی خدادادی</span></div>
+          <img src="@/assets/Images/edit/edit.svg" alt="">
+        </div>
+        <div class="text">
+          <label for="Two">
+            <input type="radio" name="radio" id="Two"/>
+            <span class="rbutton">rbutton</span>
+            <span class="text"> قم بردیسان خیابان دانشگاه بعد از میدان علوم رو به روی بایانه ساختمان شرکت توسعه و تدبیر جوامع
+        سلام</span>
+            <br>
+          </label>
+        </div>
+      </div>
+    </div>
     <FooterBasket></FooterBasket>
   </div>
 
 </template>
 
 <script>
-import Comment from '@/components/Comment'
+// import Comment from '@/components/Comment'
 import FooterBasket from '@/components/FooterBasket'
 
 export default {
   components: {
-    Comment,
+    // Comment,
     FooterBasket
   },
   data() {
-    return {
-
-    }
+    return {}
   },
   computed: {}
 }

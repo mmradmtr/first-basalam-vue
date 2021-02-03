@@ -2,12 +2,14 @@
 $app-backcolor: #eee;
 $primary-color: #DF3856 !important;
 $info_background_color: #DFF5F1 !important;
+$nav_backcolor: #DFDFDF !important;
 $elements_background: white !important;
 $btn-backcolor: #3E3E3E !important;
 $color-info: #00786C;
 $header-btn-color: #FAFAFA;
 $save-list-color: #858585;
 $save-list-border-color: #7D7D7D;
+$side_margin: 0 15px;
 //end
 
 $font-size: (
@@ -20,4 +22,9 @@ $font-size: (
 $font-weight: (
         "normal": normal,
         "bold": bold,
+        "200": 200,
+        "400": 400,
+        "600": 600,
+        "800": 800,
+        "900": 900
 );

@@ -15,6 +15,8 @@
       flex-grow: 1;
       padding: 5px 0;
       margin-right: 10px;
+      font-weight: 400;
+      font-size: 12px;
     }
 
     .price {
@@ -32,6 +34,14 @@
       .space {
         margin-right: 4px;
         font-weight: map-get($font-weight, bold);
+        width: 19px;
+
+        display: flex;
+
+        .toman {
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }

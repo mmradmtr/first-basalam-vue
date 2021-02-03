@@ -7,8 +7,8 @@
       <div class="info">
         <div class="name"><span>{{ products.name }}</span></div>
         <br>
-        <div class="price"><span class="sale">{{ products.price }}</span><span>{{ products.sale }}<span
-            class="space">تومان</span></span>
+        <div class="price"><span class="sale">{{ products.price }}</span><div class="toman">{{ products.sale }}
+          <img src="@/assets/Images/toman.svg" alt=""></div>
         </div>
       </div>
     </div>

@@ -58,5 +58,83 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.text {
+  //padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  margin: 0 15px;
+
+  input {
+    margin-left: 10px;
+  }
+
+  .text {
+    margin-right: 40px;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+
+  input {
+    margin-left: 10px;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 17px;
+  padding: 14px 0;
+
+  div {
+    margin-right: 40px;
+  }
+}
+
+.comment {
+  label {
+    input {
+      display: none;
+      position: relative;
+    }
+
+    .rbutton {
+      color: transparent;
+      width: 20px;
+      height: 20px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      position: absolute;
+
+      &:after {
+        content: "";
+        display: block;
+        background-color: white !important;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        border-radius: 50%;
+
+        transition: 300ms ease-in-out 0s;
+      }
+    }
+
   }
 }
