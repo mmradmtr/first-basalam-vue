@@ -19,7 +19,7 @@
   }
 
   .newAddress {
-    border: #9D9D9D solid 1px;
+    border: $border-color solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ label {
       width: 16px;
       background-color: $elements_background;
       border-radius: 50%;
-      border: #9D9D9D solid 2px;
+      border: $border-color solid 2px;
 
       &:after {
         content: "";

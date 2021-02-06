@@ -18,7 +18,7 @@
   }
 
   .newAddress {
-    border: #9D9D9D solid 1px;
+    border: $border-color solid 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: #9D9D9D solid 1px;
+    border: $border-color solid 1px;
     border-radius: 8px;
     padding: 4px;
 
@@ -102,7 +102,7 @@
     background-color: $elements_background;
     -webkit-transition: .4s;
     transition: .4s;
-    border: #9D9D9D solid 0.5px;
+    border: $border-color solid 0.5px;
   }
 
   input:checked + .slider {
@@ -178,7 +178,7 @@
       width: 16px;
       background-color: $elements_background;
       border-radius: 50%;
-      border: #9D9D9D solid 2px;
+      border: $border-color solid 2px;
 
       &:after {
         content: "";
