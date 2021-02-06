@@ -106,35 +106,54 @@ label {
 }
 
 .comment {
-  label {
+
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
     input {
-      display: none;
-      position: relative;
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+
+      &:checked ~ .checkmark {
+        background-color: $primary-color;
+        border: none;
+        height: 20px;
+        width: 20px;
+      }
+
+      &:checked ~ .checkmark:after {
+        display: block;
+
+      }
     }
 
-    .rbutton {
-      color: transparent;
-      width: 20px;
-      height: 20px;
-      background-color: $primary-color;
-      border-radius: 50%;
+    .checkmark {
       position: absolute;
+      top: 0;
+      right: 0;
+      height: 16px;
+      width: 16px;
+      background-color: $elements_background !important;
+      border-radius: 50%;
+      border: #9D9D9D solid 2px;
 
       &:after {
         content: "";
-        display: block;
-        background-color: white !important;
+        position: absolute;
+        display: none;
+        top: 5px;
+        left: 5px;
         width: 10px;
         height: 10px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
         border-radius: 50%;
-
-        transition: 300ms ease-in-out 0s;
+        background: white !important;
       }
     }
+
 
   }
 }

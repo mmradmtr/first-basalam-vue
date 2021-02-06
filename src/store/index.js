@@ -7,7 +7,7 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
     state: {
         Booths,
-
+        Product: null,
     },
 
     getters: {
@@ -48,8 +48,8 @@ export const store = new Vuex.Store({
         deleteProduct(state, id) {
             let product, productIndex = null;
             state.Booths.forEach(Booth => {
-                product = Booth.products.find((foundedProduct) => foundedProduct.id == id);
-                productIndex = Booth.products.findIndex((foundedProduct) => foundedProduct == product);
+                product = Booth.products.find((foundedProduct) => foundedProduct.id === id);
+                productIndex = Booth.products.findIndex((foundedProduct) => foundedProduct === product);
                 if (product) {
                     Booth.products.splice(productIndex, 1)
                 }

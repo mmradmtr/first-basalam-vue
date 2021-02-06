@@ -39,6 +39,7 @@
         display: flex;
 
         .toman {
+          display: flex;
           align-items: center;
           justify-content: center;
         }
@@ -107,8 +108,14 @@
 
   .trash {
     margin-right: 12px;
+
+    //img {
+    //  width: 16px;
+    //  height: 16px;
+    //}
   }
 }
+
 
 .input {
   all: unset;

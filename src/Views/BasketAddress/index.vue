@@ -18,9 +18,9 @@
         <img src="@/assets/Images/edit/edit.svg" alt="">
       </div>
       <div class="text">
-        <label for="one">
-          <input type="radio" name="radio" id="One"/>
-          <span class="rbutton">rbutton</span>
+        <label for="One" class="container">
+          <input type="radio" name="radioComment" checked="checked" id="One"/>
+          <span class="checkmark"></span>
           <span class="text"> قم بردیسان خیابان دانشگاه بعد از میدان علوم رو به روی بایانه ساختمان شرکت توسعه و تدبیر جوامع
         سلام</span>
           <br>
@@ -32,9 +32,9 @@
           <img src="@/assets/Images/edit/edit.svg" alt="">
         </div>
         <div class="text">
-          <label for="Two">
-            <input type="radio" name="radio" id="Two"/>
-            <span class="rbutton">rbutton</span>
+          <label for="Two" class="container">
+            <input type="radio" name="radioComment" id="Two"/>
+            <span class="checkmark"></span>
             <span class="text"> قم بردیسان خیابان دانشگاه بعد از میدان علوم رو به روی بایانه ساختمان شرکت توسعه و تدبیر جوامع
         سلام</span>
             <br>
