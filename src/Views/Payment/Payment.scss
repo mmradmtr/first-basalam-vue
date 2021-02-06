@@ -8,6 +8,10 @@
     justify-content: center;
     align-items: center;
 
+    img {
+      cursor: pointer;
+    }
+
     .send {
       margin-right: 10px;
     }
@@ -49,6 +53,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
   }
 
@@ -57,7 +62,8 @@
   }
 
   .discount_code {
-    &::placeholder {
+    input {
+      text-indent: 10px;
     }
   }
 }
@@ -130,3 +136,72 @@
     margin-right: 9.75px;
   }
 }
+
+.choose_payment {
+  margin: 0 15px;
+}
+
+.comment {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+    input {
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+
+      &:checked ~ .checkmark {
+        background-color: $primary-color;
+        border: none;
+        height: 20px;
+        width: 20px;
+      }
+
+      &:checked ~ .checkmark:after {
+        display: block;
+
+      }
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 16px;
+      width: 16px;
+      background-color: $elements_background;
+      border-radius: 50%;
+      border: #9D9D9D solid 2px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: 5px;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: white;
+      }
+    }
+  }
+}
+
+.text {
+  width: 50%;
+  margin-top: 15px;
+
+  .text {
+    margin: 0 30px 30px 0;
+  }
+}
+
+

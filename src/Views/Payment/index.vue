@@ -22,13 +22,52 @@
         <div class="use">استفاده از اعتبار</div>
       </div>
     </div>
+    <div class="choose_payment">
+      <div>
+        انتخاب درگاه برداخت
+      </div>
+      <div>
+        <div class="comment">
+          <div class="text">
+            <label for="One" class="container">
+              <input type="radio" name="radioComment" checked="checked" id="One"/>
+              <span class="checkmark"></span>
+              <span class="text">بانک سامان</span>
+            </label>
+          </div>
+          <div class="text">
+            <label for="Two" class="container">
+              <input type="radio" name="radioComment" id="Two"/>
+              <span class="checkmark"></span>
+              <span class="text">بانک باسارگاد</span>
+            </label>
+          </div>
+          <div class="text">
+            <label for="Three" class="container">
+              <input type="radio" name="radioComment" id="Three"/>
+              <span class="checkmark"></span>
+              <span class="text">آسان برداخت</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="bank">
+
+      </div>
+    </div>
+    <FooterPayment></FooterPayment>
   </div>
 </template>
 
 <script>
+import FooterPayment from '@/components/FooterPayment'
+
 
 export default {
   name: "Payment",
+  components: {
+    FooterPayment
+  },
   data() {
     return {}
   },
