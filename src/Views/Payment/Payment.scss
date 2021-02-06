@@ -10,7 +10,6 @@
 
     .send {
       margin-right: 10px;
-      font-weight: 400;
     }
   }
 
@@ -43,7 +42,7 @@
 
     .confirm {
       font-weight: 700;
-      background-color: $app-backcolor !important;
+      background-color: $app-backcolor;
       width: 68px;
       height: 32px;
       border-radius: 20px;
@@ -59,7 +58,6 @@
 
   .discount_code {
     &::placeholder {
-      font-weight: 400;
     }
   }
 }
@@ -83,7 +81,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $app-backcolor !important;
+    background-color: $app-backcolor;
     transition: .4s;
     border: unset;
   }

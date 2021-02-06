@@ -15,7 +15,6 @@
       flex-grow: 1;
       padding: 5px 0;
       margin-right: 10px;
-      font-weight: 400;
       font-size: 12px;
     }
 
@@ -99,7 +98,7 @@
       width: 13px;
       height: 13px;
       padding: 6px;
-      background-color: #eee !important;
+      background-color: #eee;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -108,11 +107,6 @@
 
   .trash {
     margin-right: 12px;
-
-    //img {
-    //  width: 16px;
-    //  height: 16px;
-    //}
   }
 }
 

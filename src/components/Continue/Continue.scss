@@ -10,7 +10,7 @@
 
 .free--info {
   margin-bottom: 20px;
-  background-color: $app-backcolor !important;
+  background-color: $app-backcolor;
   div {
     box-sizing: border-box;
     color: $color-info;
@@ -35,12 +35,12 @@
     font-weight: bold;
     font-size: 12px;
     display: flex;
-    background-color: $app-backcolor !important;
+    background-color: $app-backcolor;
     padding: 4px 12px;
     border-radius: 100px;
 
     img {
-      background-color: $app-backcolor !important;
+      background-color: $app-backcolor;
       margin-left: 5px;
     }
   }

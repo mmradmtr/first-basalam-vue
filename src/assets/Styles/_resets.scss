@@ -2,28 +2,25 @@
   font-family: IRANSans;
   margin: 0;
   padding: 0;
-  //font-weight: 400;
 }
 
 body {
-  background-color: #eee !important;
+  background-color: #eee;
 }
 
 #app {
-  margin:  auto;
-  min-width: 320px !important;
-  max-width: 360px !important;
-  font-weight: 300;
+  font-weight: 400;
+  margin: auto;
+  min-width: 320px;
+  max-width: 360px;
   font-size: 14px;
   direction: rtl;
-  padding: 0;
-  background-color: #eee !important;
-  z-index: -1;
 }
 
-*:not(#app) {
+*:not(body) {
   background-color: white;
 }
+
 .text-small {
   font-size: 0.8em;
 }

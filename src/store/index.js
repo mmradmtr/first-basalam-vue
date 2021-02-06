@@ -7,7 +7,7 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
     state: {
         Booths,
-        Product: null,
+        temp: null,
     },
 
     getters: {

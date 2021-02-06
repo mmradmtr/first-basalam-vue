@@ -43,28 +43,8 @@
   }
 }
 
-.btn {
-  border: none;
-  display: flex;
-  margin: 0 6px;
-  cursor: pointer;
-
-  img {
-    border-radius: 100%;
-    width: 13px;
-    height: 13px;
-    padding: 6px;
-    background-color: #eee !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 .text {
   padding: 10px 0;
-  //display: flex;
-  //flex-direction: row;
 }
 
 label {

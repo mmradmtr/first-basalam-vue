@@ -29,7 +29,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  // name: "Products"
+  // name: "Products",
   data() {
     return {
     }
