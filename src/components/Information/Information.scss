@@ -1,17 +1,20 @@
 .avatar {
   img {
-    width: 40px;
-    height: 40px;
-    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
   }
 }
+
 .profile {
   display: flex;
   padding: 0 15px;
+
 }
 
 .title {
   margin-right: 10px;
+
   img {
     margin-left: 5px;
   }

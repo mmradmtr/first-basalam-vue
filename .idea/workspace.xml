@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d3394dee-defc-4dd0-8760-9ef270341e05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/BasketAddress/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/BasketAddress/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/NextShoppingList/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/NextShoppingList/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/Shopcart/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Shopcart/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Styles/_resets.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Styles/_resets.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Booth/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Booth/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Comment/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Comment/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Continue/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Continue/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FooterBasket/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterBasket/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FooterPayment/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterPayment/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Information/Information.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Information/Information.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Information/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Information/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Products/Products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Products/Products.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Products/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Products/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Title/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Title/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1o3az9qhp3XnO5CnozrELX2O1Xp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/elfooy/first-basalam-vue-main" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Deleted" />
+      <recent name="$PROJECT_DIR$/src/Views" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="npm run serve" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3394dee-defc-4dd0-8760-9ef270341e05" name="Default Changelist" comment="" />
+      <created>1612517995712</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612517995712</updated>
+      <workItem from="1612518003669" duration="173000" />
+      <workItem from="1612518229116" duration="267000" />
+      <workItem from="1612519005176" duration="286000" />
+      <workItem from="1612519312077" duration="6091000" />
+      <workItem from="1612591600430" duration="17472000" />
+      <workItem from="1612610691518" duration="5561000" />
+      <workItem from="1612638086822" duration="8937000" />
+      <workItem from="1612690342343" duration="4497000" />
+      <workItem from="1612697579113" duration="364000" />
+      <workItem from="1612697961659" duration="5520000" />
+      <workItem from="1612723441092" duration="2481000" />
+      <workItem from="1612745540035" duration="979000" />
+      <workItem from="1612777368958" duration="21000" />
+      <workItem from="1612777412708" duration="1516000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

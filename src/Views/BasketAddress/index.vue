@@ -52,7 +52,6 @@
 import FooterBasket from '@/components/FooterBasket'
 
 export default {
-  name: "BasketAddress",
   components: {
     // Comment,
     FooterBasket

@@ -4,7 +4,7 @@
       <div class="free--info">
         <div>هورا ارسال از این غرفه برای شما <span style="font-weight: bold">رایگان شد</span></div>
       </div>
-      <div class="sale--code" v-if="Booths.sale_status === true">
+      <div class="sale--code" v-if="false">
         <span><img src="@/assets/Images/Continue/ticket.svg" alt="">ثبت کد تخفیف غرفه</span>
       </div>
       <div class="content--third">
@@ -13,10 +13,10 @@
         </div>
         <div class="content--third--tools">
           <div>
-            <span>جمع مبلغ برای <span>3</span> کالا</span>
+            <span>جمع مبلغ برای <span>{{ Booths.length }}</span> کالا</span>
           </div>
           <div class="content--third--price">
-            <span class="text-bold">10000<span
+            <span class="text-bold">{{ priceSum}} <span
                 class="space"><img src="@/assets/Images/toman.svg" alt=""></span></span>
           </div>
         </div>
@@ -26,23 +26,35 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import {mapGetters} from 'vuex'
 
 export default {
-  name: "Continue",
+  // name: "Products",
   data() {
-    return {
-    }
+    return {}
   },
   computed: {
-    ...mapGetters(['getProductCount', 'getProductPrice'])
+    ...mapGetters(['getProductCount', 'getProductPrice']),
+    priceSum() {
+      let p = 0;
+      for (let i = 0; i < this.Booths.length; i++) {
+        p += this.Booths[i].primaryPrice;
+      }
+      return p
+    }
   },
   props: {
     Booths: {
-      type: Object,
+      type: Array,
       required: true
     },
   },
+  methods: {
+    /*    priceSum()
+        {
+
+        }*/
+  }
 }
 </script>
 

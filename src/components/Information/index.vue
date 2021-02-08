@@ -5,7 +5,7 @@
         <img :src="info.logo.url" alt="">
       </div>
       <div class="title">
-        <span>{{ info.name }}</span><br>
+        <span>{{ info.owner }}</span><br>
         <img src="@/assets/Images/information/location_icon.svg" alt="">
         <span class="text-light">از {{ info.city }}</span>
       </div>
@@ -15,7 +15,6 @@
 
 <script>
 export default {
-  name: "Information",
   props: {
     info: {
       type: Object,

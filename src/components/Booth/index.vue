@@ -1,9 +1,9 @@
 <template>
   <div class="body">
-    <Title v-if="deleteProduct" :Title="Booths.owner"></Title>
+    <Title v-if="deleteProduct" :Title="Booths.name"></Title>
     <Information v-if="deleteProduct" :info="Booths"></Information>
-    <Products :products="products" v-for="(products, idx) in Booths.products" :key="idx"></Products>
-    <Continue v-if="deleteProduct" :Booths="Booths"></Continue>
+    <Products :products="product" v-for="(product, idx) in Booths.products" :key="idx"></Products>
+    <Continue v-if="deleteProduct" :Booths="Booths.products"></Continue>
   </div>
 </template>
 
@@ -12,10 +12,10 @@ import Title from '@/components/Title'
 import Information from '@/components/Information'
 import Products from '@/components/Products'
 import Continue from '@/components/Continue'
-
+import axios from "axios";
 
 export default {
-  name: "Booth",
+  // name: "Products"
   components: {
     Title,
     Information,
@@ -24,15 +24,17 @@ export default {
   },
   data() {
     return {
+      posts: null
     }
   },
   computed: {
     deleteProduct() {
-      return this.Booths.products.length !== 0
+      return this.Booths.products.length != 0
     }
   },
   mounted() {
-    console.log(this.Booths)
+    axios.get('https://run.mocky.io/v3/cdf4d9ab-64ab-4bce-b766-7ca8e068cb51')
+    .then((response) => this.posts = response)
   },
   props: {
     Booths: {

@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import Booths from '../../Deleted/posts.json'
-import vendors from '@/store/modules/vendors'
-
+import Booths from '@/store/posts.json'
 
 Vue.use(Vuex)
 
@@ -10,17 +8,16 @@ export const store = new Vuex.Store({
     state: {
         Booths,
         temp: null,
+        dataCart: []
     },
-    modules: {
-        vendors
-    },
+
     getters: {
         getAllProducts: (state) => {
-            let Products = 0;
-            state.Booths.forEach((Booths) => {
-                Products += Booths.products.length
-            })
-            return Products
+            let p = 0;
+            for (let i = 0; i < state.dataCart.length; i++) {
+                p += state.dataCart[i].products.length
+            }
+            return p
         },
         footerContinueBuy: (state) => {
             return state.Booths.length
@@ -61,6 +58,9 @@ export const store = new Vuex.Store({
         },
         deleteInfo() {
         },
+        dataCart(state, data) {
+            state.dataCart = data
+        },
 
         increaseProduct(state, id) {
             let product = null;
@@ -96,8 +96,10 @@ export const store = new Vuex.Store({
         },
         decreaseProduct(context, id) {
             context.commit('decreaseProduct', id)
+        },
+        dataCart({commit}, payload) {
+            commit('dataCart', payload)
         }
     },
-
 })
 

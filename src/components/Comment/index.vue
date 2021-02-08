@@ -17,7 +17,6 @@
 <script>
 
 export default {
-  name: "Comment",
   components: {},
   data() {
     return {

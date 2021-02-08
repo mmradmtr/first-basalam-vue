@@ -1,14 +1,14 @@
 <template>
   <div class="content">
     <div class="product">
-      <div class="product_img">
-        <img :src="products.image" alt="">
+      <div>
+        <img class="product_image" :src="typeof products.image === 'string' ? products.image : products.image.url" alt="">
       </div>
       <div class="info">
         <div class="name"><span>{{ products.name }}</span></div>
         <br>
         <div class="price"><span class="sale">{{ products.price }}</span><div class="toman">{{ products.primaryPrice }}
-          <img src="@/assets/Images/toman.svg" alt=""></div>
+          <img class="" src="@/assets/Images/toman.svg" alt=""></div>
         </div>
       </div>
     </div>
@@ -36,7 +36,6 @@
 // import { mapGetters } from 'vuex'
 
 export default {
-  name: "Products",
   data() {
     return {
       delay: 120,

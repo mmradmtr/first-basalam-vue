@@ -22,7 +22,6 @@
 import {mapGetters} from 'vuex'
 
 export default {
-  name: "FooterBasket",
   computed: {
     ...mapGetters(['footerContinueBuy', 'footerTotalPrice'])
   },
