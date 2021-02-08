@@ -27,6 +27,7 @@
 import {mapGetters} from 'vuex'
 
 export default {
+  name: "Header",
   data() {
     return {
       allProducts: 0

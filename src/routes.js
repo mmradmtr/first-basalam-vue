@@ -22,6 +22,7 @@ export const routes = [
     {
         path: '/Shopcart',
         component: Shopcart,
+        name: "Shopcart",
         alias: '/'
     },
 ]

@@ -1,30 +1,34 @@
 <template>
-  <div class="body">
-    <Booth :Booths="BoothData" v-for="(BoothData,index) in allBooths.Booths" :key="index"/>
-    <Footer />
+  <div v-if="vendors" class="body">
+    <!--  <div>-->
+    <!--    <Booth :Booths="BoothData" v-for="(BoothData,index) in posts.data.vendors" :key="index"/>-->
+    <!--    <Footer/>-->
   </div>
 </template>
 
 <script>
 
-import Booth from "@/components/Booth";
-import Footer from "@/components/Footer";
-// import { mapGetters } from 'vuex'
+// import Booth from "@/components/Booth";
+// import Footer from "@/components/Footer";
+import {mapState} from 'vuex'
 
 export default {
+  name: "Shopcart",
   components: {
-    Booth,
-    Footer,
+    // Booth,
+    // Footer,
   },
   data() {
     return {
-
+      // posts: null,
     }
   },
   computed: {
-    allBooths() {
-      return this.$store.state;
-    },
+    ...mapState('vendors', ['vendors'])
+  },
+  created() {
+    this.$store.dispatch('vendors/loadVendors')
+    console.log(this.vendors)
   }
 }
 </script>

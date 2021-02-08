@@ -13,10 +13,10 @@
         </div>
         <div class="content--third--tools">
           <div>
-            <span>جمع مبلغ برای <span>{{ Booths.info.productsCount }}</span> کالا</span>
+            <span>جمع مبلغ برای <span>3</span> کالا</span>
           </div>
           <div class="content--third--price">
-            <span class="text-bold">{{ Booths.info.factorPrice }} <span
+            <span class="text-bold">10000<span
                 class="space"><img src="@/assets/Images/toman.svg" alt=""></span></span>
           </div>
         </div>
@@ -29,7 +29,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  // name: "Products",
+  name: "Continue",
   data() {
     return {
     }

@@ -5,7 +5,16 @@
   .product {
     display: flex;
     padding-top: 20px;
+
+    .product_img {
+      img {
+        width: 82px;
+        height: 82px;
+        border-radius: 8px;
+      }
+    }
   }
+
 
   .info {
     width: 100%;

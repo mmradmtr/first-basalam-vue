@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import Booths from '@/store/posts.json'
+import Booths from '../../Deleted/posts.json'
+import vendors from '@/store/modules/vendors'
+
 
 Vue.use(Vuex)
 
@@ -9,7 +11,9 @@ export const store = new Vuex.Store({
         Booths,
         temp: null,
     },
-
+    modules: {
+        vendors
+    },
     getters: {
         getAllProducts: (state) => {
             let Products = 0;
@@ -94,5 +98,6 @@ export const store = new Vuex.Store({
             context.commit('decreaseProduct', id)
         }
     },
+
 })
 

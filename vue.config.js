@@ -5,5 +5,6 @@ module.exports = {
                 additionalData: `@import "@/assets/Styles/_global.scss";`
             }
         }
-    }
+    },
+    runtimeCompiler: false,
 }

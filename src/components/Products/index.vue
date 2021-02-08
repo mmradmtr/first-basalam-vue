@@ -1,13 +1,13 @@
 <template>
   <div class="content">
     <div class="product">
-      <div>
-        <img :src="products.img" alt="">
+      <div class="product_img">
+        <img :src="products.image" alt="">
       </div>
       <div class="info">
         <div class="name"><span>{{ products.name }}</span></div>
         <br>
-        <div class="price"><span class="sale">{{ products.price }}</span><div class="toman">{{ products.sale }}
+        <div class="price"><span class="sale">{{ products.price }}</span><div class="toman">{{ products.primaryPrice }}
           <img src="@/assets/Images/toman.svg" alt=""></div>
         </div>
       </div>
@@ -18,7 +18,7 @@
                 class="btn">
           <img src="@/assets/Images/Content/min.svg" alt="submit"/>
         </button>
-        <span class="input">{{ products.quantity }}</span>
+        <span class="input">{{ products.stock }}</span>
         <button type="submit" @mousedown="increase" @mouseup="cleartime" @mouseleave="cleartime"
                 class="btn">
           <img src="@/assets/Images/Content/plus.svg" alt="submit"/>
@@ -36,6 +36,7 @@
 // import { mapGetters } from 'vuex'
 
 export default {
+  name: "Products",
   data() {
     return {
       delay: 120,

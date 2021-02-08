@@ -1,12 +1,13 @@
 <template>
-    <div class="first">از غرفه: <span>{{ Title.title }}</span></div>
+    <div class="first">از غرفه: <span>{{ Title }}</span></div>
 </template>
 
 <script>
 export default {
+  name: "Title",
   props: {
     Title: {
-      type: Object,
+      type: String,
       required: true
     }
   }
