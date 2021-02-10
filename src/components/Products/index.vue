@@ -7,7 +7,7 @@
       <div class="info">
         <div class="name"><span>{{ products.name }}</span></div>
         <br>
-        <div class="price"><span class="sale">{{ products.price }}</span><div class="toman">{{ products.primaryPrice }}
+        <div class="price"><span class="sale">{{ fMoney(products.price * selfQuantity)}}</span><div class="toman">{{ fMoney(products.primaryPrice *selfQuantity)}}
           <img class="" src="@/assets/Images/toman.svg" alt=""></div>
         </div>
       </div>
@@ -18,7 +18,7 @@
                 class="btn">
           <img src="@/assets/Images/Content/min.svg" alt="submit"/>
         </button>
-        <span class="input">{{ products.stock }}</span>
+        <span class="input">{{ selfQuantity }}</span>
         <button type="submit" @mousedown="increase" @mouseup="cleartime" @mouseleave="cleartime"
                 class="btn">
           <img src="@/assets/Images/Content/plus.svg" alt="submit"/>
@@ -43,25 +43,35 @@ export default {
     }
   },
   computed: {
+    selfQuantity()
+    {
+      return this.$store.state.dataCart[this.boothIndex].products[this.product_index].quantity
+      // return this.products.quantity
+    }
     // ...mapGetters(['getSalePrice'])
   },
   methods: {
     increase() {
-      this.timer = setTimeout(() => {
-        this.$store.dispatch('increaseProduct', this.products.id);
+      this.$emit("countOrder",this.product_index,"increase")
+      /*this.timer = setTimeout(() => {
+        console.log("hi")
+        this.$emit("countOrder",this.product_index,"increase")
+        // this.$store.dispatch('increaseProduct', this.products.id);
         this.increase()
         --this.delay
-      }, this.delay)
+      }, this.delay)*/
     },
     decrease() {
-      this.timer = setTimeout(() => {
+      this.$emit("countOrder",this.product_index,"decrease")
+      /*this.timer = setTimeout(() => {
         this.$store.dispatch('decreaseProduct', this.products.id);
         this.decrease()
         --this.delay
-      }, this.delay)
+      }, this.delay)*/
     },
     deleteProduct() {
-      this.$store.dispatch('deleteProduct', this.products.id)
+      // this.$store.dispatch('deleteProduct', this.products.id)
+      this.$emit("deleteProduct",this.product_index)
     },
     cleartime() {
       clearTimeout(this.timer)
@@ -72,7 +82,15 @@ export default {
     products: {
       type: Object,
       required: true
-    }
+    },
+    product_index: {
+      type: Number,
+      required: true
+    },
+    boothIndex: {
+      type: String,
+      required: true
+    },
   }
 }
 </script>

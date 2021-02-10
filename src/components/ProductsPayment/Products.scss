@@ -1,0 +1,133 @@
+.content {
+  padding: 0 17px 15px 17px;
+  margin-bottom: 5px;
+
+  .product_image {
+    width: 85px;
+    height: 85px;
+    border-radius: 8px;
+  }
+
+  .product {
+    display: flex;
+    padding-top: 20px;
+  }
+
+  .info {
+    width: 100%;
+
+    .name {
+      display: flex;
+      flex-grow: 1;
+      padding: 5px 0;
+      margin-right: 10px;
+      font-size: 12px;
+    }
+
+    .price {
+      justify-content: flex-end;
+      flex-grow: 1;
+      display: flex;
+      padding: 5px 0;
+
+      .sale {
+        margin-left: 7px;
+        text-decoration: line-through;
+        color: $border-color;
+      }
+
+      .space {
+        margin-right: 4px;
+        font-weight: map-get($font-weight, bold);
+        width: 19px;
+
+        display: flex;
+
+        .toman {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .first {
+    padding: 24px 0;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+}
+
+.content--profile {
+  display: flex;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 0 0 20px;
+
+  .second {
+    display: flex;
+    margin-right: -6px;
+  }
+
+  div {
+
+    a {
+      text-decoration: none;
+      color: $save-list-color;
+      font-weight: bold;
+      border-bottom: 2px dotted $save-list-border-color;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .btn {
+    border: none;
+    display: flex;
+    margin: 0 6px;
+    cursor: pointer;
+
+    img {
+      border-radius: 100%;
+      width: 13px;
+      height: 13px;
+      padding: 6px;
+      background-color: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .trash {
+    img {
+      width: 16px;
+      height: 16px;
+      padding: 4px;
+    }
+
+    margin-right: 12px;
+  }
+}
+
+
+.input {
+  all: unset;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #eee;
+  text-align: center;
+  border-radius: 6px;
+}

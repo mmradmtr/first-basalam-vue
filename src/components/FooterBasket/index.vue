@@ -2,16 +2,16 @@
   <div class="body shadow">
     <div class="content">
       <div class="continue--buy">
-        <router-link tag="span" to="/BasketAddress">
+        <router-link tag="span" to="/Payment">
           <span class="buy">ادامه فرایند خرید</span>
         </router-link>
       </div>
       <div class="content--third--tools">
         <div>
-          <span>مبلغ قابل برداخت</span>
+          <span>مبلغ قابل پرداخت</span>
         </div>
         <div class="price">
-          <span class="text-bold">{{ footerTotalPrice }} تومان</span>
+          <span class="text-bold">{{  fMoney(footerTotalPrice) }} تومان</span>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
   <div class="body shadow">
     <div class="content">
       <div class="continue--buy">
-        <span class="buy">برداخت</span>
+        <span class="buy">پرداخت</span>
       </div>
     </div>
   </div>

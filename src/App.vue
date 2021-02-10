@@ -18,10 +18,23 @@ export default {
     Navbar,
 
   },
-  created() {
-    axios.get('https://run.mocky.io/v3/cdf4d9ab-64ab-4bce-b766-7ca8e068cb51').then((res) => console.log(res.data))
+  mounted() {
+    axios.get(process.env.VUE_APP_BASE_URL_API).then((res) => {
+      this.$store.dispatch("dataCart",{data:res.data.vendors,firstLoad:true})
+      console.log("1111111",res.data.vendors)
+    })
   }
 }
 
 </script>
+<style>
+@font-face {
+  font-family: 'IRANSansWeb';
+  src: url("assets/fonts/newIran/IRANSans(FaNum)_Light.ttf") format("truetype");
+  font-style: normal;
+}
+body{
+  font-family: "IRANSansWeb"!important;
+}
+</style>
 <style lang="scss" src="@/assets/Styles/_app.scss"/>

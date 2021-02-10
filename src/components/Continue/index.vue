@@ -16,7 +16,7 @@
             <span>جمع مبلغ برای <span>{{ Booths.length }}</span> کالا</span>
           </div>
           <div class="content--third--price">
-            <span class="text-bold">{{ priceSum}} <span
+            <span class="text-bold">{{fMoney (priceSum)}} <span
                 class="space"><img src="@/assets/Images/toman.svg" alt=""></span></span>
           </div>
         </div>
@@ -38,7 +38,7 @@ export default {
     priceSum() {
       let p = 0;
       for (let i = 0; i < this.Booths.length; i++) {
-        p += this.Booths[i].primaryPrice;
+        p += this.Booths[i].primaryPrice * this.Booths[i].quantity ;
       }
       return p
     }

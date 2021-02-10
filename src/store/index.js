@@ -12,10 +12,13 @@ export const store = new Vuex.Store({
     },
 
     getters: {
+        dataCart(state) {
+            return state.dataCart
+        },
         getAllProducts: (state) => {
             let p = 0;
-            for (let i = 0; i < state.dataCart.length; i++) {
-                p += state.dataCart[i].products.length
+            for (let key in state.dataCart) {
+                p += state.dataCart[key].products.length
             }
             return p
         },
@@ -23,14 +26,18 @@ export const store = new Vuex.Store({
             return state.Booths.length
         },
         footerTotalPrice: (state) => {
-            let temp, TotalPrice = null;
-            state.Booths.forEach((Booths) => {
-                temp = Booths.products;
-                temp.find((products) => {
-                    TotalPrice += products.sale
-                })
-            })
-            return TotalPrice
+
+
+            let p = 0;
+            //ghorfa
+            for (let key in state.dataCart) {
+                //product in ghorfa
+                for (let t = 0; t < state.dataCart[key].products.length; t++) {
+                    p += state.dataCart[key].products[t].primaryPrice * state.dataCart[key].products[t].quantity;
+                }
+            }
+            return p
+
         },
         getProductCount: (state) => {
             state.Booths.forEach((Booths) => {
@@ -46,20 +53,29 @@ export const store = new Vuex.Store({
         }
     },
     mutations: {
-        deleteProduct(state, id) {
-            let product, productIndex = null;
-            state.Booths.forEach(Booth => {
-                product = Booth.products.find((foundedProduct) => foundedProduct.id === id);
-                productIndex = Booth.products.findIndex((foundedProduct) => foundedProduct === product);
-                if (product) {
-                    Booth.products.splice(productIndex, 1)
+        deleteProduct(state, payload) {
+            // {idProduct,booth:this.booths_index}
+            if (state.dataCart[payload.booth].products.length === 1) {
+                delete state.dataCart[payload.booth]
+                state.dataCart = Object.assign({},state.dataCart)
+            } else
+                state.dataCart[payload.booth].products.splice(payload.idProduct, 1)
+        },
+        dataCart(state, {data, firstLoad}) {
+
+            // or read from cookie
+            if (firstLoad) {
+                let obj = {}
+                for (let i = 0; i < data.length; i++) {
+                    for (let j = 0; j < data[i].products.length; j++) {
+                        data[i].products[j].quantity = 1
+                    }
+                    obj[data[i].id] = data[i]
                 }
-            });
-        },
-        deleteInfo() {
-        },
-        dataCart(state, data) {
-            state.dataCart = data
+                state.dataCart = obj
+
+
+            }
         },
 
         increaseProduct(state, id) {
@@ -83,13 +99,21 @@ export const store = new Vuex.Store({
                     product.sale = product.price * product.percent;
                 }
             });
+        },
+        countOrder(state, payload) {
+            // {idProduct,booth:this.booths_index,count}
+            state.dataCart[payload.booth].products[payload.idProduct].quantity = payload.count;
+            // state.dataCart[payload.booth] = Object.assign({},state.dataCart[payload.booth])
+            Vue.set(state.dataCart, payload.booth, state.dataCart[payload.booth])
+
         }
     },
     actions: {
         deleteProduct(context, id) {
             context.commit('deleteProduct', id);
-            context.commit('deleteInfo', id);
-
+        },
+        countOrder(context, payload) {
+            context.commit('countOrder', payload);
         },
         increaseProduct(context, id) {
             context.commit('increaseProduct', id)
