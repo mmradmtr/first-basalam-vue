@@ -16,7 +16,7 @@ import Continue from '@/components/Continue'
 import axios from "axios";
 
 export default {
-  // name: "Products"
+  name: "BoothPayment",
   components: {
     Title,
     Information,
@@ -28,7 +28,6 @@ export default {
       this.$store.dispatch('deleteProduct', {idProduct, booth: this.booths_index})
     },
     countOrderProductEvent(idProduct, action) {
-      // {idProduct,booth:this.booths_index,count}
       let q = action === "increase" ? 1+ this.$store.state.dataCart[this.booths_index].products[idProduct].quantity : this.$store.state.dataCart[this.booths_index].products[idProduct].quantity - 1
       if (q > this.$store.state.dataCart[this.booths_index].products[idProduct].stock || q <= 0)return
       this.$store.dispatch('countOrder', {
@@ -63,5 +62,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" src="@/components/Booth/Booth.scss" scoped/>

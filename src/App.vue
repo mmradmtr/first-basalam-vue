@@ -21,7 +21,6 @@ export default {
   mounted() {
     axios.get(process.env.VUE_APP_BASE_URL_API).then((res) => {
       this.$store.dispatch("dataCart",{data:res.data.vendors,firstLoad:true})
-      console.log("1111111",res.data.vendors)
     })
   }
 }

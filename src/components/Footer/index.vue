@@ -30,16 +30,6 @@ export default {
   props: [
     "data"
   ]
-  ,
-// nextpage(){
-// return this.$router.push({name:'BasketAddress'})
-// }
-// props: {
-//   Footer: {
-//     type: Array,
-//     required: true
-//   }
-// },
 }
 
 </script>

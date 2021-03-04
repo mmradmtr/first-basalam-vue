@@ -15,10 +15,6 @@ Vue.mixin({
         fMoney: (num) => num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
     }
 })
-/*var fMoney = function (num) {
-    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
-}*/
-
 
 const router = new VueRouter({
     mode: "history",

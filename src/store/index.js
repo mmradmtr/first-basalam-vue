@@ -7,10 +7,8 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
     state: {
         Booths,
-        temp: null,
         dataCart: []
     },
-
     getters: {
         dataCart(state) {
             return state.dataCart
@@ -26,8 +24,6 @@ export const store = new Vuex.Store({
             return state.Booths.length
         },
         footerTotalPrice: (state) => {
-
-
             let p = 0;
             //ghorfa
             for (let key in state.dataCart) {
@@ -37,7 +33,6 @@ export const store = new Vuex.Store({
                 }
             }
             return p
-
         },
         getProductCount: (state) => {
             state.Booths.forEach((Booths) => {
@@ -54,7 +49,6 @@ export const store = new Vuex.Store({
     },
     mutations: {
         deleteProduct(state, payload) {
-            // {idProduct,booth:this.booths_index}
             if (state.dataCart[payload.booth].products.length === 1) {
                 delete state.dataCart[payload.booth]
                 state.dataCart = Object.assign({},state.dataCart)
@@ -62,7 +56,6 @@ export const store = new Vuex.Store({
                 state.dataCart[payload.booth].products.splice(payload.idProduct, 1)
         },
         dataCart(state, {data, firstLoad}) {
-
             // or read from cookie
             if (firstLoad) {
                 let obj = {}
@@ -73,11 +66,8 @@ export const store = new Vuex.Store({
                     obj[data[i].id] = data[i]
                 }
                 state.dataCart = obj
-
-
             }
         },
-
         increaseProduct(state, id) {
             let product = null;
             state.Booths.forEach(Booth => {
@@ -101,29 +91,26 @@ export const store = new Vuex.Store({
             });
         },
         countOrder(state, payload) {
-            // {idProduct,booth:this.booths_index,count}
             state.dataCart[payload.booth].products[payload.idProduct].quantity = payload.count;
-            // state.dataCart[payload.booth] = Object.assign({},state.dataCart[payload.booth])
             Vue.set(state.dataCart, payload.booth, state.dataCart[payload.booth])
 
         }
     },
     actions: {
-        deleteProduct(context, id) {
-            context.commit('deleteProduct', id);
+        deleteProduct({commit}, id) {
+            commit('deleteProduct', id);
         },
-        countOrder(context, payload) {
-            context.commit('countOrder', payload);
+        countOrder({commit}, payload) {
+            commit('countOrder', payload);
         },
-        increaseProduct(context, id) {
-            context.commit('increaseProduct', id)
+        increaseProduct({commit}, id) {
+            commit('increaseProduct', id)
         },
-        decreaseProduct(context, id) {
-            context.commit('decreaseProduct', id)
+        decreaseProduct({commit}, id) {
+            commit('decreaseProduct', id)
         },
         dataCart({commit}, payload) {
             commit('dataCart', payload)
         }
     },
 })
-

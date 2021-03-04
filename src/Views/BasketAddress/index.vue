@@ -48,12 +48,10 @@
 </template>
 
 <script>
-// import Comment from '@/components/Comment'
 import FooterBasket from '@/components/FooterBasket'
 
 export default {
   components: {
-    // Comment,
     FooterBasket
   },
   data() {

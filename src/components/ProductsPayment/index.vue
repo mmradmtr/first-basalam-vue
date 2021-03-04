@@ -18,7 +18,6 @@
 </template>
 
 <script>
-// import { mapGetters } from 'vuex'
 
 export default {
   data() {
@@ -31,29 +30,15 @@ export default {
     myData() {
       return this.$store.state.dataCart;
     },
-    // ...mapGetters(['getSalePrice'])
   },
   methods: {
     increase() {
       this.$emit("countOrder",this.product_index,"increase")
-      /*this.timer = setTimeout(() => {
-        console.log("hi")
-        this.$emit("countOrder",this.product_index,"increase")
-        // this.$store.dispatch('increaseProduct', this.products.id);
-        this.increase()
-        --this.delay
-      }, this.delay)*/
     },
     decrease() {
       this.$emit("countOrder",this.product_index,"decrease")
-      /*this.timer = setTimeout(() => {
-        this.$store.dispatch('decreaseProduct', this.products.id);
-        this.decrease()
-        --this.delay
-      }, this.delay)*/
     },
     deleteProduct() {
-      // this.$store.dispatch('deleteProduct', this.products.id)
       this.$emit("deleteProduct",this.product_index)
     },
     cleartime() {
